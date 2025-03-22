@@ -77,17 +77,6 @@
     }
   }
 
-  // Remove the trending ("What's happening") section
-  function removeTrendingSection() {
-    const trendingSection = document.querySelector(
-      'section[aria-labelledby="accessible-list-0"]'
-    );
-    if (trendingSection) {
-      trendingSection.remove();
-      console.log("'What's happening' section removed.");
-    }
-  }
-
   // Remove border line elements with specific classes
   function removeBorderLine() {
     const borderDivs = document.querySelectorAll(
@@ -223,7 +212,6 @@
     removeFooter();
     removeGrokButton();
     removeMessaging();
-    removeTrendingSection();
     removeBorderLine();
     removeAccountMenu();
 
